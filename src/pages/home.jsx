@@ -235,6 +235,55 @@ export default function HomePage() {
             <main>
                 <Outlet />
             </main>
+
+            <section>
+                <div className="bg-white py-4 sm:py-5">
+                    <div className="mx-auto max-w-7xl px-6 lg:px-8">
+                        <h2 className="text-center text-lg/8 font-bold text-gray-900">
+                            BRANDS WE OFFER
+                        </h2>
+                        <div className="mx-auto mt-4 grid max-w-lg grid-cols-2 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-4 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-4">
+                            <div className="flex justify-center items-center">
+                                <img
+                                    alt="Transistor"
+                                    src="http://musclestadt.de/wp-content/uploads/2023/04/Myogenetix-Logo-1.png"
+                                    width={158}
+                                    height={48}
+                                    className="max-h-12 w-full object-contain"
+                                />
+                            </div>
+                            <div className="flex justify-center items-center">
+                                <img
+                                    alt="Reform"
+                                    src="http://musclestadt.de/wp-content/uploads/2023/04/VeganHof-Logo-1.png"
+                                    width={158}
+                                    height={48}
+                                    className="max-h-12 w-full object-contain"
+                                />
+                            </div>
+                            <div className="flex justify-center items-center">
+                                <img
+                                    alt="Tuple"
+                                    src="http://musclestadt.de/wp-content/uploads/2023/04/Pure-Powders-Logo.png"
+                                    width={158}
+                                    height={48}
+                                    className="max-h-12 w-full object-contain"
+                                />
+                            </div>
+                            <div className="flex justify-center items-center">
+                                <img
+                                    alt="Statamic"
+                                    src="http://musclestadt.de/wp-content/uploads/2023/04/BioAlpine-Logo.png"
+                                    width={158}
+                                    height={48}
+                                    className="max-h-12 w-full object-contain"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <footer className="bg-gray-900 text-white py-8 font-sans px-8">
                 <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
                     <div>
@@ -271,7 +320,7 @@ export default function HomePage() {
                             <input
                                 type="email"
                                 placeholder="Email address"
-                                className="p-2 rounded-l bg-gray-800 text-white placeholder-gray-500 outline-none focus:bg-gray-700"
+                                className="p-2 rounded-l bg-gray-800 text-white placeholder-gray-500 outline-none focus:bg-gray-700 xl:max-w-max max-w-28 md:max-w-24"
                             />
                             <button className="p-2 rounded-r bg-orange-600 text-white hover:bg-orange-500 transition duration-300">Subscribe</button>
                         </div>
