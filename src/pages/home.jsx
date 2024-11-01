@@ -75,7 +75,7 @@ export default function HomePage() {
                     <PopoverGroup className="hidden lg:flex lg:gap-x-12">
                         <Popover className="relative">
                             <PopoverButton className="flex items-center gap-x-1 text-sm font-normal text-gray-900">
-                                Product
+                                Products
                                 <ChevronDownIcon className="h-5 w-5 text-gray-400" aria-hidden="true" />
                             </PopoverButton>
                             <PopoverPanel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
@@ -112,7 +112,7 @@ export default function HomePage() {
                                 </div>
                             </PopoverPanel>
                         </Popover>
-                        {['Dashboard', 'Team', 'Features', 'Marketplace', 'Company'].map((link) => (
+                        {['Dashboard', 'Featured Products', 'Team', 'Contact Us'].map((link) => (
                             <Link
                                 key={link}
                                 to="/"
@@ -190,7 +190,7 @@ export default function HomePage() {
                                 <div className="space-y-2 py-6">
                                     <Disclosure as="div" className="-mx-3">
                                         <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-normal text-gray-900 hover:bg-gray-50">
-                                            Product
+                                            Products
                                             <ChevronDownIcon className="h-5 w-5 text-gray-400 group-data-[open]:rotate-180" aria-hidden="true" />
                                         </DisclosureButton>
                                         <DisclosurePanel className="mt-2 space-y-2">
@@ -212,7 +212,7 @@ export default function HomePage() {
                                                 <Link to="/" className="-mx-3 block rounded-lg py-2.5 text-base font-normal text-gray-900 hover:bg-gray-200">
                                                     Dashboard
                                                 </Link>
-                                                {['Team', 'Features', 'Marketplace', 'Company'].map((item) => (
+                                                {['Featured Products', 'Team', 'Contact Us'].map((item) => (
                                                     <Link
                                                         key={item}
                                                         to="/"
@@ -316,7 +316,7 @@ export default function HomePage() {
                             <li className="mb-2">About Us</li>
                             <li className="mb-2">Contact Us</li>
                             <li className="mb-2">FAQ</li>
-                            <li className="mb-2">Latest Posts</li>
+                            <li className="mb-2">Latest Products</li>
                             <li>Order Track</li>
                         </ul>
                     </div>

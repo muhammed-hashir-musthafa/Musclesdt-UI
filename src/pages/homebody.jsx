@@ -78,20 +78,6 @@ export default function HomeBody() {
     return () => clearInterval(interval);
   }, [images.length]);
 
-  const marqueedata = [
-    {
-      img: (<svg width="34" height="34" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
-        <path fillRule="evenodd" clipRule="evenodd" d="M1.46967 1.46967C1.76256 1.17678 2.23744 1.17678 2.53033 1.46967L22.5303 21.4697C22.8232 21.7626 22.8232 22.2374 22.5303 22.5303C22.2374 22.8232 21.7626 22.8232 21.4697 22.5303L1.46967 2.53033C1.17678 2.23744 1.17678 1.76256 1.46967 1.46967Z" fill="white"></path>
-        <path fillRule="evenodd" clipRule="evenodd" d="M10.4453 9.55463C10.7382 9.84752 10.7382 10.3224 10.4453 10.6153L3.3606 17.7C3.36056 17.7 3.36063 17.7 3.3606 17.7C2.97109 18.09 2.7522 18.6188 2.7522 19.17C2.7522 19.721 2.97084 20.2495 3.36011 20.6394C3.74884 21.0277 4.27538 21.2464 4.82479 21.2478C5.37363 21.2491 5.90074 21.0335 6.29128 20.648C6.29172 20.6476 6.29216 20.6471 6.2926 20.6467L13.3796 13.5596C13.6725 13.2667 14.1474 13.2667 14.4403 13.5596C14.7332 13.8525 14.7332 14.3274 14.4403 14.6203L7.34736 21.7132C6.67495 22.3782 5.76672 22.7501 4.82103 22.7478C3.87534 22.7454 2.969 22.3689 2.29993 21.7006C1.62941 21.0293 1.2522 20.1187 1.2522 19.17C1.2522 18.2212 1.62883 17.3112 2.29935 16.6399L9.38464 9.55463C9.67754 9.26174 10.1524 9.26174 10.4453 9.55463Z" fill="white"></path>
-        <path fillRule="evenodd" clipRule="evenodd" d="M3.24997 16C3.24997 15.5857 3.58576 15.25 3.99997 15.25H12C12.4142 15.25 12.75 15.5857 12.75 16C12.75 16.4142 12.4142 16.75 12 16.75H3.99997C3.58576 16.75 3.24997 16.4142 3.24997 16Z" fill="white"></path>
-        <path fillRule="evenodd" clipRule="evenodd" d="M17.5303 2.46967C17.8232 2.76256 17.8232 3.23744 17.5303 3.53033L13.5303 7.53033C13.2374 7.82322 12.7626 7.82322 12.4697 7.53033C12.1768 7.23744 12.1768 6.76256 12.4697 6.46967L16.4697 2.46967C16.7626 2.17678 17.2374 2.17678 17.5303 2.46967ZM21.5303 6.46967C21.8232 6.76256 21.8232 7.23744 21.5303 7.53033L17.5303 11.5303C17.2374 11.8232 16.7626 11.8232 16.4697 11.5303C16.1768 11.2374 16.1768 10.7626 16.4697 10.4697L20.4697 6.46967C20.7626 6.17678 21.2374 6.17678 21.5303 6.46967Z" fill="white"></path>
-        <path fillRule="evenodd" clipRule="evenodd" d="M15.4697 1.46967C15.7626 1.17678 16.2374 1.17678 16.5303 1.46967L22.5303 7.46967C22.8232 7.76256 22.8232 8.23744 22.5303 8.53033C22.2374 8.82322 21.7626 8.82322 21.4697 8.53033L15.4697 2.53033C15.1768 2.23744 15.1768 1.76256 15.4697 1.46967Z" fill="white"></path>
-        <path fillRule="evenodd" clipRule="evenodd" d="M3.25 16C3.25 15.5858 3.58579 15.25 4 15.25H12C12.4142 15.25 12.75 15.5858 12.75 16C12.75 16.4142 12.4142 16.75 12 16.75H4C3.58579 16.75 3.25 16.4142 3.25 16Z" fill="white"></path>
-      </svg>), name: "No artificial flavourings"
-    }
-  ]
-
-
   return (
     <>
       <div className="relative overflow-hidden bg-white">
@@ -295,6 +281,7 @@ export default function HomeBody() {
             </svg>
             <p className="mt-2 text-sm  text-white">Non-GMO</p>
           </div>
+
           <div className="flex flex-col items-center">
             <svg width="34" height="34" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
               <path fillRule="evenodd" clipRule="evenodd" d="M2.77631 2.29293C8.92818 1.74614 12.0427 6.48361 12.621 9.7066C12.6395 9.8098 12.6467 9.90847 12.6467 10.0023L12.6467 20.858C12.6467 21.2722 12.3109 21.608 11.8967 21.608C11.4825 21.608 11.1467 21.2722 11.1467 20.858L11.1467 13.2889C11.1244 13.2897 11.1022 13.2904 11.0801 13.2911C9.95756 13.3274 8.91155 13.3612 6.97162 12.7145C5.15079 12.1076 4.23118 10.8713 3.71555 9.61908C3.46345 9.00682 3.306 8.38818 3.18181 7.85C3.15157 7.71898 3.12379 7.59536 3.09751 7.47844C3.01031 7.09045 2.93971 6.77628 2.85112 6.51053C2.7654 6.25337 2.58428 5.90318 2.34695 5.48907C2.26326 5.34303 2.16945 5.18394 2.07455 5.02301C1.92425 4.76813 1.77122 4.50861 1.65132 4.28895C1.41533 3.85666 1.41299 3.35508 1.66901 2.94378C1.91425 2.5498 2.33666 2.33201 2.77631 2.29293ZM11.1467 11.7869V10.0023C11.1467 9.9859 11.1455 9.97673 11.1446 9.9715C10.6592 7.2662 8.09372 3.41931 3.08148 3.77329C3.16313 3.91632 3.25044 4.0641 3.34267 4.2202C3.43944 4.38399 3.54163 4.55696 3.64838 4.74323C3.88461 5.15543 4.136 5.62176 4.27415 6.03618C4.38911 6.38107 4.48233 6.79704 4.57256 7.19969C4.59626 7.30546 4.61976 7.41031 4.64339 7.51271C4.76336 8.03256 4.89891 8.55335 5.10257 9.04796C5.49848 10.0095 6.14151 10.8567 7.44596 11.2915C9.12053 11.8497 9.91717 11.825 10.9933 11.7916C11.0438 11.79 11.0949 11.7885 11.1467 11.7869Z" fill="white"></path>
@@ -303,26 +290,31 @@ export default function HomeBody() {
             <p className="mt-2 text-sm  text-white">100% vegan</p>
           </div>
 
-
           <div className="flex flex-col items-center">
-            <svg width="34" height="34" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
-              <path d="M9 9h6v3H9V9z" fill="none" stroke="#FFFFFF" strokeWidth=".7" />
-              <path d="M12 12l-2 2m2-2l2 2m-2-2v3" fill="none" stroke="#FFFFFF" strokeWidth=".7" strokeLinecap="round" />
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="3" y="6" width="18" height="12" stroke="white" strokeWidth="1" rx="2" />
+              <path d="M8 6L8 3L16 3L16 6" stroke="white" strokeWidth="1" />
+              <path d="M16 16C16 18.2091 14.2091 20 12 20C9.79086 20 8 18.2091 8 16C8 15.4477 8.22386 14.9216 8.58579 14.5858C9.16879 13.8787 10.4069 13.6145 12 14C13.5931 13.6145 14.8312 13.8787 15.4142 14.5858C15.7761 14.9216 16 15.4477 16 16Z" fill="white" />
             </svg>
 
             <p className="mt-2 text-sm  text-white">Eco-Friendly Packaging</p>
           </div>
+
           <div className="flex flex-col items-center">
-            <svg width="34" height="34" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
-              <path d="M13 10c.5 1.5-1.5 4-2.5 5-1.5-1-3.5-2-2.5-4C9.5 8.5 12 8.5 13 10z" fill="white" stroke="#FFFFFF" strokeWidth=".7" />
-              <path d="M12 8v-2m-2 2l2-2 2 2" fill="white" stroke="#FFFFFF" strokeWidth=".7" strokeLinecap="round" />
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16 2L14 8H20L18 2H16Z" fill="white" />
+              <path d="M4 16C4 11.5817 7.58172 8 12 8C13.1976 8 14.3478 8.25539 15.384 8.72865L18 8L16 12H10L12 8" stroke="white" strokeWidth="1" fill="none" />
+              <path d="M14 20L12 16L18 16L16 20H14Z" fill="white" />
+              <path d="M4 8C4 12.4183 7.58172 16 12 16C13.1976 16 14.3478 15.7446 15.384 15.2713L18 16L16 20H10L12 16" stroke="white" strokeWidth="1" fill="none" />
             </svg>
+
             <p className="mt-2 text-sm  text-white">Biodegradable</p>
           </div>
+
           <div className="flex flex-col items-center">
-            <svg width="34" height="34" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 12c0-2 1-4 4-4-2 0-4 1-4 4zm-4 4c0-1 2-3 4-4-2 0-4 1-4 4z" fill="white" stroke="#FFFFFF" strokeWidth=".7" />
-              <path d="M12 14v4" fill="white" stroke="#FFFFFF" strokeWidth=".7" strokeLinecap="round" />
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 21V12" stroke="white" strokeWidth="1" strokeLinecap="round" />
+              <path d="M12 12C15 12 18 9 18 6C18 4.5 16.5 3 15 3C13.5 3 12 4.5 12 6C12 4.5 10.5 3 9 3C7.5 3 6 4.5 6 6C6 9 9 12 12 12Z" fill="white" />
             </svg>
 
             <p className="mt-2 text-sm  text-white">Organic Ingredients</p>
