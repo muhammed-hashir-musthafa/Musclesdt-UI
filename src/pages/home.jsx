@@ -2,6 +2,7 @@ import { useState } from 'react';
 import logo from "../assets/BioAlpine Logo png.png"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import { faLocationArrow } from '@fortawesome/free-solid-svg-icons';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import {
     Dialog,
@@ -49,7 +50,7 @@ export default function HomePage() {
 
     return (
         <>
-            <header className="bg-white">
+            <header className="bg-white fixed z-30 w-screen">
                 <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
                     <div className="flex lg:flex-1">
                         <Link to="/" className="-m-1.5 p-1.5">
@@ -232,7 +233,7 @@ export default function HomePage() {
                     </DialogPanel>
                 </Dialog>
             </header>
-            <main>
+            <main className='pt-10'>
                 <Outlet />
             </main>
 
@@ -289,18 +290,24 @@ export default function HomePage() {
                     <div>
                         <h2 className="text-lg font-bold mb-4">Our Locations</h2>
                         <ul className="text-gray-400">
-                            <li className="mb-2">The Squaire - Am Flughafen 715, The Squaire 12, Am Flughafen, Frankfurt, Hessen 60549, DE</li>
-                            <li>Hanau, 63450, DE</li>
+                            <li className="mb-2">
+                                <FontAwesomeIcon icon={faLocationArrow} className="mr-2" />
+                                The Squaire - Am Flughafen 715, The Squaire 12, Am Flughafen, Frankfurt, Hessen 60549, DE
+                            </li>
+                            <li>
+                                <FontAwesomeIcon icon={faLocationArrow} className="mr-2" />
+                                Hanau, 63450, DE
+                            </li>
                         </ul>
                     </div>
                     <div>
                         <h2 className="text-lg font-bold mb-4">Top Categories</h2>
                         <ul className="text-gray-400">
-                            <li className="mb-2">Televisions</li>
-                            <li className="mb-2">Washing Machines</li>
-                            <li className="mb-2">Air Conditioners</li>
-                            <li className="mb-2">Laptops</li>
-                            <li>Accessories</li>
+                            <li className="mb-2">Whey Protein Espresso Roast</li>
+                            <li className="mb-2">Whey Protein Alpine Milk Chocolate</li>
+                            <li className="mb-2">Whey Protein Alphonso Mango</li>
+                            <li className="mb-2">Whey Protein Unflavoured</li>
+                            <li>Whey Protein Blueberry</li>
                         </ul>
                     </div>
                     <div>
@@ -322,8 +329,11 @@ export default function HomePage() {
                                 placeholder="Email address"
                                 className="p-2 rounded-l bg-gray-800 text-white placeholder-gray-500 outline-none focus:bg-gray-700 xl:max-w-max max-w-28 md:max-w-24"
                             />
-                            <button className="p-2 rounded-r bg-orange-600 text-white hover:bg-orange-500 transition duration-300">Subscribe</button>
+                            <button className="p-2 rounded-r bg-gray-600 text-white hover:bg-gray-500 transition duration-300">Subscribe</button>
                         </div>
+                        <h2 className="text-lg font-bold mb-1 mt-2">Get touch with Us</h2>
+                        <p className="text-gray-400">+49 (0)69 959 325 048</p>
+                        <p className="text-gray-400">contact@musclestadt.de</p>
                     </div>
                 </div>
                 <div className="container mx-auto mt-8 border-t border-gray-700 pt-4 flex flex-col md:flex-row justify-between items-center">

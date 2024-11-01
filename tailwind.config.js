@@ -1,13 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       fontFamily: {
-        'neue-haas': ['"Neue Haas Grotesk Display"', 'sans-serif'], // Adding custom font family
+        "neue-haas": ['"Neue Haas Grotesk Display"', "sans-serif"], 
       },
       fontWeight: {
         thin: 100,
@@ -23,4 +20,4 @@ export default {
     },
   },
   plugins: [],
-}
+};
